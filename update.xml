@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>Joomla Hunter Links</name>
+        <description>Joomla Hunter Links</description>
+        <element>joomlahunterlinks</element>
+        <type>plugin</type>
+        <version>1.0.2</version>
+        <infourl title="Joomla Hunter Links v.1.0.2">https://github.com/xdan/joomlahunterlinks#1.0.2</infourl>
+        <downloads>
+            <downloadurl type="upgrade" format="zip">https://github.com/xdan/joomlahunterlinks/archive/master.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <targetplatform name="joomla" version=".*" />
+        <client>site</client>
+        <folder>system</folder>
+    </update>
+</updates>

@@ -1,0 +1,21 @@
+{
+  "name": "joomlahunterlinks",
+  "version": "1.0.3",
+  "description": "Logs all the links that are on the site, and if the links are blacklisted then deletes them",
+  "main": "index.js",
+  "scripts": {
+    "update": "npm version patch --no-git-tag-version",
+    "github": "npm run update && git add --all  && git commit -m \"New version %npm_package_version%. Read more https://github.com/xdan/joomlahunterlinks#%npm_package_version% \" && git tag %npm_package_version% && git push --tags origin HEAD:master",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdan/joomlahunterlinks.git"
+  },
+  "author": "Chupurnov Valeriy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xdan/joomlahunterlinks/issues"
+  },
+  "homepage": "https://github.com/xdan/joomlahunterlinks#readme"
+}
