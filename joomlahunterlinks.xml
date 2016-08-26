@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2016 system. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+	<name>plg_system_joomlahunterlinks</name>
+	<author></author>
+	<creationDate>August 2016</creationDate>
+	<copyright>Copyright (c) 2016 system. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0.2</version>
+	<description>
+	<![CDATA[
+		<p>Logs all the links that are on the site, and if the links are blacklisted then deletes them</p>
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="joomlahunterlinks">joomlahunterlinks.php</filename>
+		<filename>index.html</filename>
+		<filename>en-GB.plg_system_joomlahunterlinks.ini</filename>
+		<filename>en-GB.plg_system_joomlahunterlinks.sys.ini</filename>
+        <folder>fields</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_joomlahunterlinks.ini</language>
+		<language tag="en-GB">en-GB.plg_system_joomlahunterlinks.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/joomlahunterlinks/fields">
+			<fieldset name="basic">
+                <field 
+                    name="blacklist"
+                    type="blacklist"
+                    label="PLG_SYSTEM_JOOMLAHUNTERLINKS_BLACKLIST_LABEL"
+                    description="PLG_SYSTEM_JOOMLAHUNTERLINKS_BLACKLIST_DESCR"
+                />
+			</fieldset>
+            <fieldset name="sometext" label="PLG_SYSTEM_JOOMLAHUNTERLINKS_SOMETEXT_LABEL">
+                <field 
+                    name="sometext"
+                    type="sometext"
+                    label="PLG_SYSTEM_JOOMLAHUNTERLINKS_SOMETEXT_FIELD_LABEL"
+                    description="PLG_SYSTEM_JOOMLAHUNTERLINKS_SOMETEXT_FIELD_DESCR"
+                />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
